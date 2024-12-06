@@ -45,7 +45,7 @@ public class GameState implements Serializable {
             inventory.remove(item);
             if (item.equals("Health Potion")) {
                 playerHealth = Math.min(playerHealth + 20, 100);
-                System.out.println("You regained health!");
+                System.out.println("You regained health! " + "Your health is now: " + playerHealth);
             }
             return true;
         }
